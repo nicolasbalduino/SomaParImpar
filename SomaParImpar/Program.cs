@@ -1,11 +1,21 @@
 ﻿int somaImpar = 0, somaPar = 0, num = 0;
 
+void SomaPar()
+{
+    somaPar += num;
+}
+
+void SomaImpar()
+{
+    somaImpar += num;
+}
+
 void ParImpar()
 {
     if (num % 2 == 0)
-        somaPar += num;
+        SomaPar();
     else
-        somaImpar += num;
+        SomaImpar();
 }
 
 do
